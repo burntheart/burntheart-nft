@@ -194,7 +194,7 @@ export const Page = () => {
 			</div>
 			<div className="market">
 				<a
-					href="https://opensea.io/0x4b25282bb93b7d6e4f66e75af13b6fe4ce8a129f"
+					href="https://rarible.com/token/0x60f80121c31a0d46b5279700f9df786054aa5ee5:1144007?tab=details"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="btn"
