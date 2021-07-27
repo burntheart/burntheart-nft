@@ -1,0 +1,176 @@
+:root {
+    --color-gray: #1C1C1C;
+    --color-light-gray: #313131;
+    --color-pale: #E0E0E0;
+}
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-color: black;
+}
+
+body, button, a {
+    color: white;
+    font-family: 'Tinos', serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        padding: 0 24px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    position: relative;
+}
+
+.header__msg {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    color: var(--color-pale);
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: var(--color-gray);
+}
+
+.btn__wallet {
+    width: 238px;
+}
+
+@media (max-width: 1023px) {
+    .btn__wallet {
+        display: none;
+    }
+}
+
+.btn:hover {
+    background-color: var(--color-light-gray);
+}
+
+.text {
+    padding: 36px 0;
+    text-align: justify;
+}
+
+.text__link-inline {
+    text-decoration: underline;
+}
+
+.market {
+    padding: 16px 0 58px;
+}
+
+.video {
+    position: relative;
+    padding-top: 56.25%;
+}
+    
+.player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    position: relative;
+    width: 70vw;
+    max-width: 1200px;
+    max-height: 675px;
+    background-color: #fff;
+}
+
+.modal2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay, .overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    background: none;
+    transform: translateY(-100%);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1023px) {
+    .header, .text {
+        padding: 24px;
+    }
+
+    .text, .text a {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .market {
+        padding: 8px 24px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .market .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
